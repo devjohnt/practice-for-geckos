@@ -21,7 +21,11 @@ If we are all on board let's move on! What am I trying to do here with this repo
 3. Make some changes and commit them.
 4. Push our changes to remote.
 5. Make a Pull Request.
-6. Merge the Pull Request with our default branch.
+6. Make a comment for a pull request.
+7. Make changes in our code when our pull request is still active.
+8. Review another's pull request.
+9. Make sure we are up to date with default branch.
+10. Answering reviews and push it back.
 
 ## 1. Clone this Repo
 * Make a new directory on your local device named as 'practice-for-geckos'
@@ -146,11 +150,99 @@ nothing to commit, working tree clean
 * You can change title or commit body or leave it to be.
 * Create that pull request!
 
-## 6. Merge the Pull Request with our Default Branch
-* I will make the merge, don't worry about that ;)
+## 6. Make a Comment for a Pull Request
 
-Try another branches and another commits as you go, get comfortable. If you stuck, fire a question!
+So far, so good. Before continue with issues on GitHub, there are some matters we're gonna touch on. Such as making comments on PR (from now on PR means Pull Request).
 
-After this one we will take look at Issues and Waffle. If you know all of this, just let me know, I'll make the process faster!
+Now I'm going to make a comment for your PR. Embrace it and answer me! :grin:
 
-Cheers!
+But first, please read these articles:
+- About Comments
+  - Commenting on a pull request: https://help.github.com/articles/commenting-on-a-pull-request/
+  - Creating a permanent link to a code snippet: https://help.github.com/articles/creating-a-permanent-link-to-a-code-snippet/
+  
+* Go to your Pull Request when notification come.
+* Reply those comments (just write something it doesn't matter).
+* Make sure you leave a reaction to comments! :thumbsup::-1::heart:
+
+## 7. Make Changes in Your Code When Your Pull Request is still Active.
+
+There are always typos in the code :smiley: Don't be shy to comment each other's code and encourage yourself and other geckos to be more **_GLORIOUS!_** :sunglasses:
+
+* Make requested changes in the file on your local.
+  - Make sure you are in the correct branch! **Your branch** :sunglasses:
+* Make the commit. Let me remind you:
+  - `git status` : Check the working directory for unstaged files.
+  - `git add -A` : Add them all to stage. (You might see the term: _Staging changes_).
+  - `git status` : Check your staged files. Is that what you want?
+    - Defining the what you want: type `git diff` and see what has changed?
+    - If those are not the changes you want to commit, it is not too late. Think about the `git reset`
+    - If so, make the commit already!
+  - `git commit -m "Your commit message"`
+  - `git status` again to see if everything is ok.
+    - If you want to `git log` to see all commit. And give it a try on `git log --oneline`
+* Push it again.
+
+  - `git push origin <Your Branch Name Here!>`
+
+Hopefully, your Pull Request is now updated. Go and check it on GitHub!
+
+## 8. Review Another's Pull Request
+* What is that _Pull Request Review_? Please read the listed articles below:
+  - About Pull Request Reviews
+    - About pull request reviews: https://help.github.com/articles/about-pull-request-reviews/
+    - Reviewing proposed changes in a pull request: https://help.github.com/articles/reviewing-proposed-changes-in-a-pull-request/
+    - Viewing a pull request review: https://help.github.com/articles/viewing-a-pull-request-review/
+* So, you know what is reviewing a PR. I have asked to review each other's PRs now.
+* Please go and check it, and;
+  - Write some comments here and there.
+  - Request PR's owner to add a div element to his/her HTML file.
+    - Don't ask so much, just a div. You decide what to write!
+* Complete Review with requesting change and submit it.
+
+## 9. Make Sure We are up-to-date with Default Branch
+Now, we have something to update. But before we will do more changes, it is a good idea that checking that is our default branch up-to-date. We want to do this because we want to minimize the merge conflicts.
+
+So, you may say nothing change with our default branch (`master` in this case) but you are wrong. While I wrote this README.md, I'm pushing commits to master and overwrite it. So, your README.md file on your local and my README.md file (as long as you read these lines) are different. Go and check it, you can't find these lines in README.md on your local.
+  - _Note: Shalini you won't see any changes in  README.md file. Because when you will `git pull`, you will have the latest master branch on remote. But that's OK, anyway you do these steps, too._
+
+Let's make our local master is up-to-date.
+
+* First, terminal on your local, check out to master branch.
+
+  - `git checkout master`
+
+* Second make a pull from remote repository.
+
+  - `git pull origin master`
+  - Go and check README.md file again. If eveything went OK, you will see the updated file.
+
+* Now go back to your branch (In my case it is daris-calinor)
+
+  - `git checkout <Your Branch Name>`
+
+    - _Note-1: If you forget your branch name type `git branch` It will list all your local branches._
+
+    - _Note-2: If you want to see all branches (local + remote) type `git branch -va`_
+    
+    - _Note-3: When using terminal, write two or three letter of the command/branch name/file name etc. and press TAB key to auto-complete._ 
+    
+* When you are in your branch check the logs:
+  - `git log`
+    - _Note: When you merge with `git merge` there is a commit added to your log. (yes there are other ways for merging strategies, like `git rebase` but we will use this one.)_
+    
+* So what we did:
+  - Go to default branch
+  - Pull it from remote
+  - Go to our branch
+  - Merge with default branch
+  - Now we are up-to-date and ready to work on
+  
+* **This will be our one of the main things we will do regularly in our code sprints.**
+
+## 10. Answering Reviews and Push it Back
+* Now, all you need to do is make those changes and push it again.
+* You know all the process.
+* After you have updated your pull request please [Request a Pull Request Review](https://help.github.com/articles/requesting-a-pull-request-review/) from the team member who wanted the changes.
+* When you have requested for PR Review of another team-mate, go and review it. If everything is like commented, submit a Approved Review.
+* I will merge the Approved Reviews with the master.
