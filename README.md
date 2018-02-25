@@ -1,3 +1,4 @@
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/DarisCalinor/practice-for-geckos.png?columns=all)](https://waffle.io/DarisCalinor/practice-for-geckos?utm_source=badge)
 # Welcome Glorious Geckos!
 
 Welcome to Glorious Practice for our project workflow!
