@@ -1,4 +1,3 @@
-[![Waffle.io - Columns and their card count](https://badge.waffle.io/DarisCalinor/practice-for-geckos.png?columns=all)](https://waffle.io/DarisCalinor/practice-for-geckos?utm_source=badge)
 # Welcome Glorious Geckos!
 
 Welcome to Glorious Practice for our project workflow!
@@ -27,6 +26,11 @@ If we are all on board let's move on! What am I trying to do here with this repo
 8. Review another's pull request.
 9. Make sure we are up to date with default branch.
 10. Answering reviews and push it back.
+11. Join Waffle Board
+12. Create an Issue from GitHub or Waffle
+13. Create a Branch with the Issue Number
+14. Close the Issue with a Pull Request and Use _Closing Keywords_
+15. Brace Yourself Chingu! Glorious are Coming!
 
 ## 1. Clone this Repo
 * Make a new directory on your local device named as 'practice-for-geckos'
@@ -247,3 +251,73 @@ Let's make our local master is up-to-date.
 * After you have updated your pull request please [Request a Pull Request Review](https://help.github.com/articles/requesting-a-pull-request-review/) from the team member who wanted the changes.
 * When you have requested for PR Review of another team-mate, go and review it. If everything is like commented, submit a Approved Review.
 * I will merge the Approved Reviews with the master.
+
+## 11. Join Waffle Board
+* We will be using Waffle to track our issues.
+* Please sign-up to Waffle.
+* Join to Waffle board to click with this link: https://waffle.io/DarisCalinor/practice-for-geckos/join
+* When joined, go and check the Columns. We have these columns and they do these:
+  - **Inbox**: Every issue or pull request (unless they have the specific label) goes here.
+  - **Backlog**: When we plan what will be doing for that particular issue we carry the Card to this column.
+  - **Next**: The issues will be working on upcoming sprints. When we are gonna work on this on next week, we move the card here.
+  - **In Progress**: When we start to work on the issue, we move the card here. This represents the issues we are working on it now.
+  - **Review**: When your work is done and ready to merge the default branch, we move the card here. This is the step when we create the Pull Request.
+  - **Done**: If your Pull Request is approved and merged with default branch, the card goes here. Issue is closed.
+* You will see your pull requests are in the Review column. You can see review result, requested reviews and comments top-right corner of cards.
+
+## 12. Create an Issue from GitHub or Waffle
+* You can either create a issue from GitHub or Waffle.
+* Please read this from Voyage-Wiki: https://github.com/Chingu-cohorts/voyage-wiki/wiki/Sprints-Issue-Tracking
+### Create an Issue from GitHub of Waffle
+* Please read this from GitHub Help: https://help.github.com/articles/creating-an-issue/
+* Click New Issue in Issues tab under the repo.
+* Type 'Test for Waffle' to Title and 'This is the test for the waffle!' to description.
+* Assing Type, Priorty and Scope labels from the menu on right side.
+  - `Type: Feature` `Priorty: High` `Scope:Story`
+  - _Note: Leave the State labels. Those should be assigned from Waffle._
+* Click `Submit New Issue`.
+* Go to Waffle to check. See our fresh new issue in Inbox!
+_Note: You can add issues from Waffle, too. Just click the blue 'New Issue' button on top of the page, under the Board View tab._
+
+## 13. Create a Branch with the Issue Number
+* Most of the time we are handling issues with writing code. In this scenerio our first move should be create a new branch for the specific issue.
+* Go to your local, and open the terminal. Checkout to default branch _(Ours is `master` for this repo. It will be `development` for team repo.)_
+* Hit `git pull` to make sure you are up-to-date.
+* Create a new branch and checkout to that branch.
+  - Now, we need to be on the same page for our branch names. We are going to use this convention:
+  
+  - `<type>-<branchName>-#<issue number>`
+  
+  It will be `feature-testForWaffle-#6` for this example.
+    - Use hyphen between Type-brancName-#IssueNo
+    - Use camel case for writing branch name. https://en.wikipedia.org/wiki/Camel_case
+    - Be consistent to use this format.
+
+  - `git checkout -b feature-testForWaffle-#6`
+
+* Push it to remote!
+
+  - `git push -u origin feature-testForWaffle-#6`
+
+* When we push this branch to remote, Waffle will automatically understand that you are working something with related to Issue #6. It will assing you for the issue, move the card to `In Progress` column on Waffle and assign/change State label on GitHub. The important part here is the write correct number for the issue.
+* Go and check Waffle and GitHub Issues.
+* If things won't go as you wish, reach out to me or to the community!
+
+## 14. Close the Issue with a Pull Request and Use _Closing Keywords_
+* We work on the feature in our working branch and make our lots of _atomic commits_.
+  - Wait what is **_Atomic Commit_**?? Go and check this one: https://www.freshconsulting.com/atomic-commits/
+* Let's make a tiny change. Create a new file named as `<your name>.css`. For me it will be `daris.css`.
+* Make the commit and push it to origin.
+* Go to GitHub and make the Pull Request with your working branch.
+  - Add [_Closing Keywords_](https://help.github.com/articles/closing-issues-using-keywords/) to Description for closing the related issue automatically. It's easy and great way to close issue. You can use these keywords in commit title/descriptions or Pull Request title/descriptions.
+  - For this example I add to PR description `Closes #6`
+* When you submit your Pull Request, Waffle identifies the action and moves the related issue card from In Progress to Review column automatically. Go check for Waffle.
+* When your pull request will be approved and merged with the default branch, Waffle will move the card to Done column.
+
+## 15. Brace Yourself Chingu! Glorious are Coming!
+
+**We are done to get ready, Glorious! Let's get our feet wet!**
+
+**_Brace yourself, Chingu... Glorious are coming!_**
+
+![WW](http://www.comingsoon.net/assets/uploads/2017/10/Wonder.jpg)
